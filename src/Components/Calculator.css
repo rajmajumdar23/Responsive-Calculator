@@ -1,0 +1,101 @@
+/* Calculator.css */
+
+.page-wrapper {
+    background: linear-gradient(to bottom, #3cb4e9, #8c48ed);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.calculator {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(247, 247, 247, 0.8); 
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+  
+  #inputBox {
+    width: 95%;
+    padding: 10px;
+    font-size: 1.5rem;
+    text-align: right;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    outline: none;
+  }
+  
+  .button-grid {
+    margin-top: 20px;
+  }
+  
+  .button-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px; /* Add margin to create space between button rows */
+  }
+  
+  .button {
+    flex: 1;
+    padding: 15px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color:  #3cb4e9;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 2px; 
+  }
+  .button-row .button[value="+"] {
+    font-size: 1.5rem;
+  }
+  
+  .button-row .button[value="-"] {
+    font-size: 1.5rem;
+  }
+  .button-row .button[value="0"] {
+    flex: 2;
+  }
+  
+  .button-row .button[value="."] {
+    flex: 0.5;
+  }
+  .button:hover {
+    background-color: #76c4e6;
+  }
+  
+  .button:last-child {
+    background-color: #8c48ed;
+  }
+  
+  .button:last-child:hover {
+    background-color: #ae83ea;
+  }
+  
+  /* Responsive Styles for Mobile */
+  @media (max-width: 600px) {
+    .calculator {
+      padding: 15px;
+      max-width: 500px;
+    }
+  
+    #inputBox {
+      font-size: 1rem;
+      width: 90%;
+    }
+  
+    .button {
+      font-size: 1rem;
+      padding: 8px;
+    }
+  
+    .button-row {
+      margin-bottom: 5px;
+    }
+  }
+  
